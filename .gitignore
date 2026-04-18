@@ -1,0 +1,5 @@
+node_modules/
+.expo/
+backend/node_modules/
+frontend/node_modules/
+database.db

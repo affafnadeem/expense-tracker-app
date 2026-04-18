@@ -1,0 +1,17 @@
+{
+  "name": "expense-tracker-app",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "frontend": "npm --workspace frontend start",
+    "backend": "npm --workspace backend start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
